@@ -1,0 +1,25 @@
+{
+  "id": 6332724,
+  "name": "Branch protection: main push-del",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "Catfriend1/syncthing-android",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    }
+  ],
+  "bypass_actors": []
+}
